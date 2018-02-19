@@ -1,7 +1,99 @@
-body{
-    background-color: black;
+@import "./bower_components/bootstrap/less/bootstrap.less";
 
-    h1{
-        color: white;
-    }
+/*
+* CSS Lets LP 02
+ */
+
+@grid-columns:              12;
+@grid-gutter-width:         20px;
+@grid-float-breakpoint:     768px;
+
+@branco: #fff;
+@amarelo: #FFA500;
+@verde: #52B152;
+
+
+.btn-padrao{
+    .btn;
+    padding: 12px 25px;
+    border-radius: 25px;
+    .text-uppercase;
 }
+
+.btn-amarelo{
+    .btn-padrao;
+    .button-variant(@branco; @amarelo; @amarelo);
+
+}
+
+.btn-verde{
+    .btn-padrao;
+    .button-variant(@branco; @verde; @verde);
+}
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-family: "Bernina Sans";
+    font-size: 50px;
+    line-height: 56px;
+}
+
+h2{
+    font-size: 30px;	
+    line-height: 38px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.texto-destaque{
+    line-height: 42px;
+    font-size: 26px;
+}
+
+
+
+//navbar
+.navbar-default {
+    background-color: transparent; 
+    border: none;
+    height: 98px;
+    margin-top: 26px;
+    margin-bottom: 26px; 
+}
+
+
+
+#venda-mais, #sua-lista, #formizaveis  {
+        width: 100%; 
+        height: 550px; 
+        background-position: center center; 
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+        background-size: 234px 326px;
+        
+}
+
+#venda-mais{
+    background-color:@branco; 
+    background-image: url(/img/ingresso.png); 
+}
+
+#sua-lista{
+    background-color:@branco; 
+    background-image: url(/img/lista.png); 
+}
+
+#formizaveis{
+    background-color:@branco; 
+    background-image: url(/img/ingresso-lista.png); 
+}
+
+
