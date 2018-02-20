@@ -65,35 +65,69 @@ p{
     background-color: transparent; 
     border: none;
     height: 98px;
-    margin-top: 26px;
-    margin-bottom: 26px; 
+    padding-bottom: 26px;
+    padding-top: 26px;
 }
 
 
 
-#venda-mais, #sua-lista, #formizaveis  {
+.animacao{
         width: 100%; 
         height: 550px; 
         background-position: center center; 
         background-attachment: fixed; 
         background-repeat: no-repeat;
-        background-size: 234px 326px;
-        
+        background-size: 550px 550px;
 }
 
 #venda-mais{
+    .animacao;
     background-color:@branco; 
-    background-image: url(/img/ingresso.png); 
+    background-image: url(/img/ingresso@2x.png); 
 }
 
 #sua-lista{
+    .animacao;
     background-color:@branco; 
-    background-image: url(/img/lista.png); 
+    background-image: url(/img/lista@2x.png); 
 }
 
 #formizaveis{
+    .animacao;
     background-color:@branco; 
-    background-image: url(/img/ingresso-lista.png); 
+    background-image: url(/img/ingresso-lista@2x.png); 
 }
 
+
+.bkg-img(){
+    background: no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: block;
+    
+}
+
+#ola-tecnologia{
+    .bkg-img;
+    min-height: 710px;
+}
+
+#sua-audiencia{
+    .bkg-img;
+    min-height: 760px;
+}
+
+#conheca-seu-publico{
+    .bkg-img;
+    min-height: 900px;
+}
+
+#app-demo{
+    .bkg-img;
+    min-height: 600px;
+    background-size: auto 550px;
+}
 
