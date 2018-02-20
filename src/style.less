@@ -11,6 +11,7 @@
 @branco: #fff;
 @amarelo: #FFA500;
 @verde: #52B152;
+@azul: #6ED3FF;
 
 
 .btn-padrao{
@@ -71,6 +72,8 @@ p{
 
 
 
+
+
 .animacao{
         width: 100%; 
         height: 550px; 
@@ -81,9 +84,15 @@ p{
 }
 
 #venda-mais{
+
+    margin-top: 80px;
     .animacao;
     background-color:@branco; 
     background-image: url(/img/ingresso@2x.png); 
+
+    h2{
+        padding-top: 129px;
+    }
 }
 
 #sua-lista{
@@ -113,6 +122,35 @@ p{
 #ola-tecnologia{
     .bkg-img;
     min-height: 710px;
+
+    h1{
+        color: @branco;	        
+        font-size: 50px;
+        line-height: 56px;
+    }
+    p{
+        padding-top: 12px;
+        padding-bottom: 55px;
+        color: @branco;	
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+#mesma-plataforma{
+    background-color: @azul;
+    min-height: 324px;
+    .text-center;
+    p{
+        padding-top: 120px;
+        color: #FFFFFF;		
+        font-size: 26px;	
+        line-height: 42px;
+
+        span{
+            font-weight: bold;
+        }
+    }
 }
 
 #sua-audiencia{
