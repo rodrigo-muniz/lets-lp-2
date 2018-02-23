@@ -6721,10 +6721,50 @@ button.close {
     display: none !important;
   }
 }
+/*--------------------------------------------------------------
+# reset
+--------------------------------------------------------------*/
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+/*--------------------------------------------------------------
+# Tipografia
+--------------------------------------------------------------*/
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+@font-face {
+  font-family: Bernina Sans Regular;
+  src: url('../css/font/BerninaSans-Web-Regular.woff');
+}
+@font-face {
+  font-family: Bernina Sans Bold;
+  src: url('../css/font/BerninaSans-Web-Bold.woff');
+}
+@font-face {
+  font-family: Bernina Sans Condense Bold;
+  src: url('../css/font/BerninaSans-Web-CondensedBold.woff');
+}
+@font-face {
+  font-family: Lest Regular;
+  src: url('../css/font/Lets-Regular.woff');
+}
 /*
 * CSS Lets LP 02
  */
 .btn-padrao {
+  font-family: Bernina Sans Regular;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -6783,6 +6823,10 @@ fieldset[disabled] a.btn-padrao {
   pointer-events: none;
 }
 .btn-amarelo {
+  font-family: Bernina Sans Regular;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -6896,6 +6940,10 @@ fieldset[disabled] .btn-amarelo.focus {
   background-color: #fff;
 }
 .btn-verde {
+  font-family: Bernina Sans Regular;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -7014,21 +7062,36 @@ fieldset[disabled] .btn-verde.focus {
   flex-wrap: wrap;
 }
 h1 {
-  font-family: "Bernina Sans";
+  font-family: Bernina Sans Regular;
   font-size: 50px;
   line-height: 56px;
 }
 h2 {
+  font-family: Bernina Sans Regular;
   font-size: 30px;
   line-height: 38px;
 }
 p {
+  font-family: Bernina Sans Regular;
   font-size: 18px;
   line-height: 30px;
 }
 .texto-destaque {
+  font-family: Bernina Sans Regular;
   line-height: 42px;
   font-size: 26px;
+}
+header {
+  font-family: Lest Regular;
+}
+header .logo {
+  color: #1D6CAD;
+  float: left;
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-top: 0.8rem;
+  padding-top: 0rem;
+  text-transform: uppercase;
 }
 .navbar-default {
   background-color: transparent;
@@ -7038,6 +7101,7 @@ p {
   padding-top: 26px;
 }
 .animacao {
+  margin-top: 160px;
   width: 100%;
   height: 550px;
   background-position: 30% center;
@@ -7045,21 +7109,24 @@ p {
   background-repeat: no-repeat;
   background-size: 550px 550px;
 }
-#venda-mais {
+.animacao:first-of-type {
   margin-top: 80px;
-  background-color: #fff;
-  background-image: url(/img/ingresso@2x.png);
 }
-#venda-mais h2 {
+.animacao h2 {
+  padding-bottom: 24px;
+  text-transform: uppercase;
   padding-top: 129px;
 }
-#sua-lista {
-  background-color: #fff;
-  background-image: url(/img/lista@2x.png);
+.lista {
+  padding-left: 0;
+  list-style: none;
+  color: #646464;
+  font-family: Bernina Sans Regular;
+  font-size: 16px;
+  line-height: 26px;
 }
-#formidaveis {
-  background-color: #fff;
-  background-image: url(/img/ingresso-lista@2x.png);
+.lista li {
+  padding-bottom: 18px;
 }
 #ola-tecnologia {
   background: no-repeat center center;
@@ -7068,12 +7135,15 @@ p {
   -o-background-size: cover;
   background-size: cover;
   display: block;
-  min-height: 710px;
+  min-height: 100vh;
+  position: relative;
 }
 #ola-tecnologia h1 {
+  padding-top: 95px;
   color: #fff;
   font-size: 50px;
   line-height: 56px;
+  text-transform: uppercase;
 }
 #ola-tecnologia p {
   padding-top: 12px;
@@ -7081,6 +7151,32 @@ p {
   color: #fff;
   font-size: 18px;
   line-height: 30px;
+}
+#ola-tecnologia .role {
+  font-family: Bernina Sans Regular;
+  text-transform: uppercase;
+  position: absolute;
+  width: 200px;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -100px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+#venda-mais {
+  background-color: #fff;
+  background-image: url(/img/ingresso@2x.png);
+}
+#sua-lista {
+  background-color: #fff;
+  background-image: url(/img/lista@2x.png);
+}
+#formidaveis {
+  background-color: #fff;
+  background-image: url(/img/ingresso-lista@2x.png);
 }
 #mesma-plataforma {
   background-color: #6ED3FF;

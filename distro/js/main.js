@@ -1,7 +1,17 @@
 $(function () {
     $('.lazy').Lazy();
 
+    //pinBackground();
 
+
+
+
+
+});
+
+//http://jquery.eisbehr.de/lazy/
+
+function pinBackground() {
     $(window).scroll(function () {
 
         var pxScrollado = $(window).scrollTop();
@@ -26,8 +36,4 @@ $(function () {
         }
 
     });
-
-
-});
-
-//http://jquery.eisbehr.de/lazy/
+}
