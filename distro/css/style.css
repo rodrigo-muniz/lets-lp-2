@@ -7067,7 +7067,7 @@ h1 {
   line-height: 56px;
 }
 h2 {
-  font-family: Bernina Sans Regular;
+  font-family: Bernina Sans Condense Bold;
   font-size: 30px;
   line-height: 38px;
 }
@@ -7200,6 +7200,71 @@ header .logo {
   background-size: cover;
   display: block;
   min-height: 760px;
+}
+#melhores-taxas h1 {
+  padding-top: 261px;
+  padding-bottom: 12px;
+  color: #3C3C3C;
+  font-family: Bernina Sans Condense Bold;
+  font-size: 50px;
+  line-height: 56px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#melhores-taxas p.desc {
+  color: #3C3C3C;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+#melhores-taxas .tabela-lets {
+  border: 1px solid #DCDCDC;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+#melhores-taxas .tabela-lets h2 {
+  padding-top: 22px;
+  min-height: 68px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 8px 8px 0px 0px;
+}
+#melhores-taxas .tabela-lets p.taxa {
+  padding-top: 16px;
+  font-family: "Vinila Compressed";
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 60px;
+}
+#melhores-taxas .tabela-lets p.taxa span {
+  font-size: 25px;
+}
+#melhores-taxas .tabela-lets p.obs {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  color: #DCDCDC;
+  font-family: Bernina Sans Condense Bold;
+}
+#melhores-taxas .tabela-pago h2 {
+  background-color: #DEEAF3;
+}
+#melhores-taxas .tabela-gratuito h2 {
+  background-color: #E4F9DC;
+}
+#melhores-taxas .info .credit-cards {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+#melhores-taxas .info .credit-cards > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 #conheca-seu-publico {
   background: no-repeat center center;

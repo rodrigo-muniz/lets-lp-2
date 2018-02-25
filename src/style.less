@@ -39,8 +39,6 @@ body{
 @lets: Lest Regular;
 
 
-
-
 /*
 * CSS Lets LP 02
  */
@@ -90,7 +88,7 @@ h1{
 }
 
 h2{
-    font-family: @berdina;
+    font-family: @berdina-condense;
     font-size: 30px;	
     line-height: 38px;
 }
@@ -265,6 +263,89 @@ header{
     .bkg-img;
     min-height: 760px;
 }
+
+#melhores-taxas{
+    h1{
+        padding-top: 261px;
+        padding-bottom: 12px;
+        color: #3C3C3C;	
+        font-family: @berdina-condense;	
+        font-size: 50px;	
+        line-height: 56px;
+        .text-uppercase;
+        .text-center;
+    }
+
+    p.desc{
+        color: #3C3C3C;		
+        font-size: 16px;	
+        line-height: 28px;        
+        .text-center;
+        padding-bottom: 60px;
+
+    }
+
+    .tabela-lets{
+        border: 1px solid #DCDCDC;	
+        border-radius: 8px;
+        margin-bottom: 24px;
+
+        h2{
+            padding-top: 22px;
+            min-height: 68px;
+            font-size: 20px;	
+            letter-spacing: 1px;	
+            line-height: 28px;
+            .text-uppercase;
+            .text-center;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        p.taxa{
+            padding-top: 16px;
+            font-family: "Vinila Compressed";	
+            font-size: 50px;	
+            font-weight: 300;	
+            line-height: 60px;
+
+            span{
+                font-size: 25px;
+            }
+
+        }
+
+        p.obs{
+            padding-top: 5px;
+            padding-bottom: 30px;
+            .text-uppercase;
+            color: #DCDCDC;;
+            font-family: @berdina-condense;
+        }
+    }
+
+    .tabela-pago{
+        h2{
+            background-color: #DEEAF3;
+        }
+    }
+    .tabela-gratuito{
+        h2{
+            background-color: #E4F9DC;
+        }
+    }
+
+    .info{
+
+        .credit-cards{
+            .list-inline;
+            
+        }
+
+    }
+
+   
+}
+
 
 #conheca-seu-publico{
     .bkg-img;
