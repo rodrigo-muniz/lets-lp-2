@@ -7491,6 +7491,26 @@ header .logo {
   background-color: #fff;
   text-align: center;
 }
+#myModal {
+  background-color: #fff;
+}
+#myModal .modal-dialog {
+  width: 600px;
+  margin: 15% auto;
+}
+#myModal .modal-dialog .modal-content {
+  background-color: black;
+}
+#myModal .modal-dialog .modal-content button.close {
+  margin-top: -70px;
+}
+#myModal .modal-dialog .modal-content button.close span {
+  font-size: 40px;
+  color: black;
+}
+#myModal .modal-dialog .modal-content .modal-header {
+  border: 0;
+}
 .acabamento {
   background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
   min-height: 20px;
