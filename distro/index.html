@@ -11,8 +11,11 @@
     <!-- Bootstrap -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- https://afeld.github.io/emoji-css/ -->
+
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,7 +51,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <button class="btn-amarelo uppercase">Falar com um consultor</button>
+                            <a href="#" class="btn-amarelo uppercase">Falar com um consultor</a>
                         </li>
                         <li>
                             <a href="#">Entrar</a>
@@ -76,7 +79,12 @@
             </div>
         </div>
 
-        <a href="#" class="role">Role para ver mais</a>
+        <a href="#" class="role">
+            <p>
+                Role para ver mais
+                <i class="far fa-chevron-down"></i>
+            </p>
+        </a>
 
 
 
@@ -217,14 +225,32 @@
             <div class="row">
                 <div class="col-sm-8 info">
                     <ul class="credit-cards">
-                        <li></li>
+                        <li>
+                            <img src="img/Visa@2x.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="img/Master@2x.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="img/Elo@2x.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="img/Amex@2x.png" alt="" class="img-responsive">
+                        </li>
+                        <li>
+                            <img src="img/Diners@2x.png" alt="" class="img-responsive">
+                        </li>
                     </ul>
                     <p>Parcelamento em até 12x.</p>
                     <p>Taxas das administradoras do cartão de crédito já inclusas.</p>
                     <p>Taxa mínima: R$ 2,00.</p>
                 </div>
-                <div class="col-sm-4">
-                    <p>Utilize todos os benefícios e recursos sem pagar nada por isso!</p>
+                <div class="col-sm-4 info">
+                    <div class="ro">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <p>Utilize todos os benefícios e recursos sem pagar nada por isso!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,7 +279,10 @@
                 <div class="col-sm-6 col-sm-offset-3">
                     <p>
                         Nossa base de contatos inteligente mostra o histórico de cada participante ao longo de todos os seus eventos, o que possibilita
-                        a criação de estratégias de marketing mais assertivas.
+                        a criação de
+                        <span>
+                            estratégias de marketing mais assertivas.
+                        </span>
                     </p>
                 </div>
             </div>
@@ -287,43 +316,118 @@
                     <h1>Veja quem já está usando</h1>
                 </div>
             </div>
+
+
+
             <div class="row">
                 <div class="col-xs-12">
 
+
+                    <div id="carousel-depoimentos" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-depoimentos" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-depoimentos" data-slide-to="1"></li>
+                            <li data-target="#carousel-depoimentos" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <div class="card-depoimento">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <img src="img/img-depoimento@2x.png" alt="Túlio Borges, DDuck" class="img-responsive">
+
+                                                    <h2>Túlio Borges, DDuck</h2>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h3>Menos tempo gasto com listas</h3>
+                                                    <p>
+                                                        O Lets além de ser uma ferramenta muito simples de usar, nos ajudou a poupar tempo e trabalho. Agora nossas listas de convidados
+                                                        ficam muito mais organizadas e os nossos clientes têm mais autonomia,
+                                                        podendo incluir novos nomes sem a necessidade de entrar em contato
+                                                        conosco.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <div class="card-depoimento">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <img src="img/img-depoimento@2x.png" alt="Túlio Borges, DDuck" class="img-responsive">
+
+                                                    <h2>Túlio Borges, DDuck</h2>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h3>Menos tempo gasto com listas</h3>
+                                                    <p>
+                                                        O Lets além de ser uma ferramenta muito simples de usar, nos ajudou a poupar tempo e trabalho. Agora nossas listas de convidados
+                                                        ficam muito mais organizadas e os nossos clientes têm mais autonomia,
+                                                        podendo incluir novos nomes sem a necessidade de entrar em contato
+                                                        conosco.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item ">
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <div class="card-depoimento">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <img src="img/img-depoimento@2x.png" alt="Túlio Borges, DDuck" class="img-responsive">
+
+                                                    <h2>Túlio Borges, DDuck</h2>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h3>Menos tempo gasto com listas</h3>
+                                                    <p>
+                                                        O Lets além de ser uma ferramenta muito simples de usar, nos ajudou a poupar tempo e trabalho. Agora nossas listas de convidados
+                                                        ficam muito mais organizadas e os nossos clientes têm mais autonomia,
+                                                        podendo incluir novos nomes sem a necessidade de entrar em contato
+                                                        conosco.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="col-xs-6 col-sm-2">
-                        <img src="" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-xs-6 col-sm-2">
-                        <img src="" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-xs-6 col-sm-2">
-                        <img src="" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-xs-6 col-sm-2">
-                        <img src="" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-xs-6 col-sm-2">
-                        <img src="" alt="" class="img-responsive">
-                    </div>
-                    <div class="col-xs-6 col-sm-2">
-                        <img src="" alt="" class="img-responsive">
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
 
     <section id="ainda-com-duvidas">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                     <h1>Ainda com dúvidas?</h1>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-sm-ofsset-3">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                     <p>
                         Solicite uma demonstração focada no seu evento, tire suas dúvidas com nossos especialistas e entenda porque tantos organizadores
                         de eventos preferem o Lets.
@@ -335,73 +439,126 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container footer">
             <div class="row">
                 <div class="col-xs-6 col-sm-3">
                     <h2>Lets.events</h2>
                     <ul class="list-inline">
-                        <li>face</li>
-                        <li>face</li>
-                        <li>face</li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-xs-6 col-sm-3">
                     <h2>Fale com um consultor</h2>
                     <ul class="list-unstyled">
-                        <li>Blog</li>
-                        <li>Preço</li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Preço
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-xs-6 col-sm-3">
                     <h2>Soluções para organizadores</h2>
                     <ul class="list-unstyled">
-                        <li>Gerencie múltiplas listas</li>
-                        <li>Performance do seu evento</li>
-                        <li>Agilidade na sua portaria</li>
-                        <li>Venda de ingressos</li>
+                        <li>
+                            <a href="">Gerencie múltiplas listas</a>
+                        </li>
+                        <li>
+                            <a href="">Performance do seu evento</a>
+                        </li>
+                        <li>
+                            <a href="">Agilidade na sua portaria</a>
+                        </li>
+                        <li>
+                            <a href="">Venda de ingressos</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-xs-6 col-sm-3">
                     <h2>Suporte</h2>
                     <ul class="list-unstyled">
-                        <li>Dúvidas frequentes</li>
-                        <li>Termos e condições</li>
-                        <li>Agilidade na sua portaria</li>
-                        <li>equipe@lets.events</li>
+                        <li>
+                            <a href="">Dúvidas frequentes</a>
+                        </li>
+                        <li>
+                            <a href="">Termos e condições</a>
+                        </li>
+                        <li>
+                            <a href="">Agilidade na sua portaria</a>
+                        </li>
+                        <li>
+                            <a href="">equipe@lets.events</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <!-- row -->
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <ul class="list-unstyled">
-                        <li>
-                            <img src="" alt="" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="" alt="" class="img-responsive">
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <ul class="list-unstyled">
-                        <li>
-                            <img src="" alt="" class="img-responsive">
-                        </li>
-                        <li>
-                            <img src="" alt="" class="img-responsive">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
         </div>
     </section>
-    <section>
+    <!-- #ainda-com-duvidas -->
 
+    <div class="from">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="">
+                                <img src="img/Apple@2x.png" alt="" class="img-responsive">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/GooglePlay@2x.png" alt="" class="img-responsive">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <p class="pull-right">
+                        De
+                        <a href="">Belzonte</a>
+                        para o Mundo
+                        <img src="img/Brasil-BH@2x.png" alt=""> Made in Brasil
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- from -->
 
+    <section id="lets-2-min">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a class="btn btn-default" href="">LETS EM 2 MINUTOS</a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <div class="acabamento">
+
+    </div>
+
 
 
 

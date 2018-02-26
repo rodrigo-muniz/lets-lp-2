@@ -54,7 +54,7 @@ body{
 
 
 .btn-padrao{
-    font-family: @berdina;
+    font-family: @berdina-condense;
     font-size: 16px;
     letter-spacing: 1px;	
     line-height: 22px;
@@ -127,16 +127,27 @@ header{
     height: 98px;
     padding-bottom: 26px;
     padding-top: 26px;
+
+    li{
+        a{
+            color: #FFFFFF !important;	
+            font-family: @berdina-condense;	
+            font-size: 16px;	
+            letter-spacing: 1px;	
+            line-height: 22px;
+            .text-uppercase;
+            padding-left: 34px;
+        }
+    }
+
+    
 }
 
 
 .animacao{
 
-        margin-top: 160px;
-        &:first-of-type{
-            margin-top: 80px;
-        }
-
+        padding-top: 160px;
+        
         width: 100%; 
         height: 550px; 
         background-position: 30% center; 
@@ -204,8 +215,8 @@ header{
 }
 
 #venda-mais{
-
-    
+    padding-top: 0px;
+    margin-top: 80px;
     //.animacao;
     background-color:@branco; 
     background-image: url(/img/ingresso@2x.png); 
@@ -224,6 +235,7 @@ header{
 }
 
 #formidaveis{
+    padding-top: 60px;
     //.animacao;
     background-color:@branco; 
     background-image: url(/img/ingresso-lista@2x.png); 
@@ -259,12 +271,12 @@ header{
     }
 }
 
-#sua-audiencia{
-    .bkg-img;
-    min-height: 760px;
-}
+
 
 #melhores-taxas{
+
+    padding-bottom: 165px;
+
     h1{
         padding-top: 261px;
         padding-bottom: 12px;
@@ -338,23 +350,315 @@ header{
 
         .credit-cards{
             .list-inline;
+
+            li{
+                padding-left: 3px;
+                padding-right: 3px;
+                img{
+                    max-width: 34px;
+                    height: auto;
+                }
+            }
             
+        }
+
+        p{
+            color: #646464;	
+            font-family: @berdina;	
+            font-size: 13px;	
+            line-height: 22px;
         }
 
     }
 
+
    
 }
 
+#sua-audiencia{
+    .bkg-img;
+    min-height: 760px;
+
+    h1{
+        padding-top: 84px;
+        padding-bottom: 12px;
+        color: #3C3C3C;	
+        font-family: @berdina-condense;	
+        font-size: 50px;	
+        line-height: 56px;
+        .text-uppercase;
+    }
+
+    p{
+        color: #3C3C3C;	
+        font-family: @berdina;	
+        font-size: 16px;	
+        line-height: 28px;
+    }
+}
 
 #conheca-seu-publico{
     .bkg-img;
     min-height: 900px;
+
+    h1{
+        padding-top: 109px;
+        padding-bottom: 12px;
+        color: #FFFFFF;	
+        font-family: @berdina-condense;	
+        font-size: 50px;	
+        line-height: 56px;
+        .text-uppercase;
+        .text-center;
+    }
+
+    p{
+        color: #FFFFFF;	
+        font-family: @berdina;	
+        font-size: 16px;	
+        line-height: 28px;
+        span{
+            font-weight: bold;
+        }
+    }
 }
 
-#app-demo{
-    .bkg-img;
-    min-height: 600px;
-    background-size: auto 550px;
+#menos-fila{
+
+    h1{
+        padding-top: 142px;
+        padding-bottom: 12px;
+
+        color: #3C3C3C;	
+        font-family: @berdina-condense;	
+        font-size: 50px;	
+        line-height: 56px;
+
+        .text-uppercase;
+
+    }
+
+    p{
+        color: #3C3C3C;	
+        font-family: @berdina;	
+        font-size: 16px;	
+        line-height: 28px;
+        
+    }
+
+    #app-demo{
+        .bkg-img;
+        min-height: 600px;
+        background-size: auto 550px;
+
+        padding-top: 52px;
+    }//#app-demo
+
+}//#menos-fila
+
+#quem-ja-esta-usando{
+    
+    h1{
+        padding-top: 151px;
+        padding-bottom: 60px;
+        color: #3C3C3C;	
+        font-family: @berdina-condense;	
+        font-size: 50px;	
+        line-height: 56px;
+        .text-uppercase;
+        .text-center;
+    }
+
+    
+
+    #carousel-depoimentos{
+
+        .carousel-indicators{
+
+            bottom: 80px;
+
+            li{
+                border: 1px solid #D8D8D8;
+                border-radius: 10px;                
+                background-color: #D8D8D8;
+    
+                &.active{
+    
+                    border: 1px solid #1C8FD9;
+                    background-color:#1C8FD9;
+    
+                }
+    
+            }
+        }
+        
+
+        .carousel-inner{
+            .item{
+                .card-depoimento{
+
+                    margin-bottom: 46px;
+                    padding: 48px;
+                    
+
+                    border: 1px solid #DCDCDC;	
+                    border-radius: 8px;	
+                    background-color: #FFFFFF;	
+                    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+            
+
+                    img{
+                        width: 170px;
+                        height: auto;
+                        .center-block;
+                    }
+
+                    h2{        
+                        padding-top: 43px;            
+                        .text-center;
+                        color: #1C8FD9;	
+                        font-family: @berdina-condense;	
+                        font-size: 18px;	
+                        line-height: 25px;
+                    }
+
+                    h3{
+                        
+                        padding-bottom: 10px;
+                        color: #3C3C3C;	
+                        font-family: @berdina-condense;	
+                        font-size: 20px;	
+                        letter-spacing: 1px;	
+                        line-height: 28px;
+                    }
+
+                    p{
+                        
+                        color: #3C3C3C;	
+                        font-family: @berdina;	
+                        font-size: 16px;	
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}//#quem-ja-esta-usando
+
+#ainda-com-duvidas{
+    height: 873px;
+    background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
+    color: @branco;
+    .text-center;
+
+    h1{
+        padding-top: 140px;
+        padding-bottom: 12px;
+        font-family: @berdina-condense;
+        .text-uppercase;
+    }
+
+    p{
+        color: #FFFFFF;	
+        font-family: @berdina;	
+        font-size: 16px;	
+        line-height: 28px;
+        padding-bottom: 30px;
+    }
+
+    .footer{
+        margin-top: 105px;
+        padding-top: 60px; 
+
+        .text-left;
+
+        h2{
+            padding-bottom: 18px;
+            font-family: @berdina-bold;	
+            font-size: 14px;	
+            font-weight: bold;	
+            line-height: 20px;
+        }
+
+        ul{
+            li{
+                padding-bottom: 18px;
+                font-family: @berdina;	
+                font-size: 14px;	
+                line-height: 20px;
+
+                a{
+                    color: @branco;
+                }
+
+                
+            }
+        }
+
+    }
+
+
+
+}//ainda-com-duvidas
+
+.from{
+    height: 107px;
+    margin-top: -107px;
+    padding: 33px 123px;
+    border-top: 1px solid rgba(255,255,255,0.8);
+
+    p, a{
+        color: @branco;
+    }
+
+    a{
+        text-decoration: underline;   
+    }
+
+    p{
+        img{
+            padding: 0 3.5px;
+            width: 60px;
+            height: auto;
+        }
+    }
+
+    ul{
+        li{
+            padding-left: 0px;
+            padding-right: 25px;
+
+            img{
+                width: 140px;
+                height: auto;
+            }
+        }
+    }
+
+    
 }
+
+#lets-2-min {
+    padding: 50px 0;
+    background-color: @branco;
+    //min-height: 142px;
+
+    .text-center;
+
+    a{
+
+    }
+
+}//lets-2-min
+
+.acabamento{
+    background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
+    min-height: 20px;
+}
+
+
+
+
+
+
 

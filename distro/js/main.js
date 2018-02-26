@@ -1,7 +1,7 @@
 $(function () {
     $('.lazy').Lazy();
 
-    //pinBackground();
+    pinBackground();
 
 
 
