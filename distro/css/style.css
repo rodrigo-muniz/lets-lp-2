@@ -6779,6 +6779,9 @@ body {
 .cinza {
   color: #646464;
 }
+.navbar-btn {
+  margin-top: 3px;
+}
 .btn-padrao {
   font-family: Bernina Sans Condense Bold;
   font-size: 16px;
@@ -6805,7 +6808,6 @@ body {
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -1px 0 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-padrao:focus,
 .btn-padrao:active:focus,
@@ -6868,7 +6870,6 @@ fieldset[disabled] a.btn-padrao {
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -1px 0 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
   background-color: #FFA500;
   border-color: #FFA500;
@@ -6982,7 +6983,6 @@ fieldset[disabled] .btn-amarelo.focus {
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -1px 0 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   color: #6ED3FF;
   background-color: #F0F0F0;
   border-color: #F0F0F0;
@@ -7106,7 +7106,6 @@ fieldset[disabled] .btn-cinza.focus {
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 -1px 0 0 rgba(0, 0, 0, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
   background-color: #52B152;
   border-color: #52B152;
@@ -7241,6 +7240,14 @@ header .logo {
   height: 98px;
   padding-bottom: 26px;
   padding-top: 26px;
+}
+.navbar-default .navbar-brand {
+  font-family: Lest Regular;
+  color: #fff;
+  height: 29px;
+  width: 152px;
+  font-size: 24px;
+  line-height: 29px;
 }
 .navbar-default li a {
   color: #FFFFFF !important;
@@ -7605,6 +7612,10 @@ header .logo {
   font-weight: bold;
   line-height: 20px;
 }
+#ainda-com-duvidas .footer ul.social li {
+  padding-left: 5px;
+  padding-right: 15px;
+}
 #ainda-com-duvidas .footer ul li {
   padding-bottom: 18px;
   font-family: Bernina Sans Regular;
@@ -7613,6 +7624,10 @@ header .logo {
 }
 #ainda-com-duvidas .footer ul li a {
   color: #fff;
+}
+#ainda-com-duvidas .footer ul li a img {
+  width: 24px;
+  height: auto;
 }
 .from {
   height: 107px;
