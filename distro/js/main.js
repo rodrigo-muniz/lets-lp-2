@@ -1,6 +1,18 @@
 $(function () {
     $('.lazy').Lazy();
 
+    //$.Lazy('av', ['audio', 'video'], function(element, response) {
+    // this plugin will automatically handle '<audio>' and '<video> elements,
+    // even when no 'data-loader' attribute was set on the elements
+    //});
+
+    var areas = $("#areas-atuacao").html();
+
+    console.log(areas);
+
+    var listaPalavras = ["Tecnologia", "Eventos", "Teste 1", "Teste 2"];
+    changeWords(listaPalavras, 2000);
+    
     pinBackground();
 
 
@@ -36,4 +48,15 @@ function pinBackground() {
         }
 
     });
+}
+
+
+function changeWords(wordsArray, intervalo) {
+    count = 0;
+    setInterval(function () {
+        count++;
+        $("#areas-atuacao").fadeOut(400, function () {
+            $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+        });
+    }, intervalo);
 }

@@ -18,25 +18,30 @@ body{
 
 @font-face{
     font-family: Bernina Sans Regular;
-    src: url('../css/font/BerninaSans-Web-Regular.woff');
+    src: url('../css/font/bernina/BerninaSans-Web-Regular.woff');
 }
 @font-face{
     font-family: Bernina Sans Bold;
-    src: url('../css/font/BerninaSans-Web-Bold.woff');
+    src: url('../css/font/bernina/BerninaSans-Web-Bold.woff');
 }
 @font-face{
     font-family: Bernina Sans Condense Bold;
-    src: url('../css/font/BerninaSans-Web-CondensedBold.woff');
+    src: url('../css/font/bernina/BerninaSans-Web-CondensedBold.woff');
 }
 @font-face{
     font-family: Lest Regular;
-    src: url('../css/font/Lets-Regular.woff');
+    src: url('../css/font/lets/Lets-Regular.woff');
+}
+@font-face{
+    font-family: Vinila Compressed;
+    src: url('../css/font/vinila/Vinila-Rg-Cp.otf');
 }
 
 @berdina-bold: Bernina Sans Bold;
 @berdina: Bernina Sans Regular;
 @berdina-condense: Bernina Sans Condense Bold;
 @lets: Lest Regular;
+@vinila-compressed: Vinila Compressed;
 
 
 /*
@@ -51,6 +56,28 @@ body{
 @amarelo: #FFA500;
 @verde: #52B152;
 @azul: #6ED3FF;
+@cinza: #646464;
+
+@verde-gradiente: linear-gradient(180deg, #52B152 0%, #458E50 100%);
+@amarelo-gradiente: linear-gradient(0deg, #FFA500 0%, #FFC24A 100%);
+
+.braco{
+    color: @branco
+}
+.amarelo{
+    color: @amarelo
+}
+.verde{
+    color: @verde
+}
+.azul{
+    color: @azul
+}
+.cinza{
+    color: @cinza
+}
+
+
 
 
 .btn-padrao{
@@ -62,17 +89,32 @@ body{
     padding: 12px 25px;
     border-radius: 25px;
     .text-uppercase;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1), inset 0 -1px 0 0 rgba(0,0,0,0.3), 0 4px 10px 0 rgba(0,0,0,0.2);
+    
 }
 
 .btn-amarelo{
     .btn-padrao;
     .button-variant(@branco; @amarelo; @amarelo);
+    
+}
+.btn-cinza{
+    .btn-padrao;
+    .button-variant(@azul; #F0F0F0; #F0F0F0);
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.15);
+    color: #1C8FD9;	
+    font-family: @berdina-condense;	
+    font-size: 16px;	
+    letter-spacing: 1px;	
+    line-height: 22px;
 
 }
+
 
 .btn-verde{
     .btn-padrao;
     .button-variant(@branco; @verde; @verde);
+
 }
 
 .equal {
@@ -185,6 +227,7 @@ header{
 
     h1{
         padding-top: (151px-56x);
+        font-family: @berdina-bold;
         color: @branco;	        
         font-size: 50px;
         line-height: 56px;
@@ -221,9 +264,7 @@ header{
     background-color:@branco; 
     background-image: url(/img/ingresso@2x.png); 
 
-    h2{
-        
-    }
+
 
 
 }
@@ -315,7 +356,7 @@ header{
 
         p.taxa{
             padding-top: 16px;
-            font-family: "Vinila Compressed";	
+            font-family: @vinila-compressed;	
             font-size: 50px;	
             font-weight: 300;	
             line-height: 60px;
@@ -543,6 +584,20 @@ header{
             }
         }
     }
+
+    #logo-clientes{
+        margin-top: 46px;
+        margin-bottom: 99px;
+
+        img{
+            .center-block;
+            width: 80%;
+            height: auto;;
+        }
+
+
+    }
+
 }//#quem-ja-esta-usando
 
 #ainda-com-duvidas{
@@ -617,7 +672,7 @@ header{
 
     p{
         img{
-            padding: 0 3.5px;
+            padding: 0 3.5px;       
             width: 60px;
             height: auto;
         }
@@ -645,9 +700,7 @@ header{
 
     .text-center;
 
-    a{
 
-    }
 
 }//lets-2-min
 
