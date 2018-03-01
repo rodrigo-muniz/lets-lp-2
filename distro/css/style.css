@@ -7326,16 +7326,16 @@ header .logo {
   padding-top: 0px;
   margin-top: 80px;
   background-color: #fff;
-  background-image: url(/img/ingresso@2x.png);
+  background-image: url(../img/ingresso@2x.png);
 }
 #sua-lista {
   background-color: #fff;
-  background-image: url(/img/lista@2x.png);
+  background-image: url(../img/lista@2x.png);
 }
 #formidaveis {
   padding-top: 60px;
   background-color: #fff;
-  background-image: url(/img/ingresso-lista@2x.png);
+  background-image: url(../img/ingresso-lista@2x.png);
 }
 #mesma-plataforma {
   background-color: #6ED3FF;
