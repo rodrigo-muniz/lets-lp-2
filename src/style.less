@@ -52,10 +52,11 @@ body{
 @grid-gutter-width:         20px;
 @grid-float-breakpoint:     768px;
 
-@branco: #fff;
+@branco: #ffffff;
 @amarelo: #FFA500;
 @verde: #52B152;
 @azul: #6ED3FF;
+@azul-2: #3CC2EE;
 @cinza: #646464;
 
 @verde-gradiente: linear-gradient(180deg, #52B152 0%, #458E50 100%);
@@ -191,7 +192,7 @@ header{
 
     li{
         a{
-            color: #FFFFFF !important;	
+            color: @branco !important;	
             font-family: @berdina-condense;	
             font-size: 16px;	
             letter-spacing: 1px;	
@@ -325,7 +326,7 @@ header{
     .text-center;
     p{
         padding-top: 120px;
-        color: #FFFFFF;		
+        color: @branco;		
         font-size: 26px;	
         line-height: 42px;
 
@@ -468,7 +469,7 @@ header{
     h1{
         padding-top: 109px;
         padding-bottom: 12px;
-        color: #FFFFFF;	
+        color: @branco;	
         font-family: @berdina-condense;	
         font-size: 50px;	
         line-height: 56px;
@@ -477,7 +478,7 @@ header{
     }
 
     p{
-        color: #FFFFFF;	
+        color: @branco;	
         font-family: @berdina;	
         font-size: 16px;	
         line-height: 28px;
@@ -569,7 +570,7 @@ header{
 
                     border: 1px solid #DCDCDC;	
                     border-radius: 8px;	
-                    background-color: #FFFFFF;	
+                    background-color: @branco;	
                     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
             
 
@@ -627,7 +628,7 @@ header{
 
 #ainda-com-duvidas{
     height: 873px;
-    background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
+    background: linear-gradient(180deg, #@azul-2 0%, #1C8FD9 100%, #1C8FD9 100%);
     color: @branco;
     .text-center;
 
@@ -639,7 +640,7 @@ header{
     }
 
     p{
-        color: #FFFFFF;	
+        color: @branco;	
         font-family: @berdina;	
         font-size: 16px;	
         line-height: 28px;
@@ -779,7 +780,7 @@ header{
 }
 
 .acabamento{
-    background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
+    background: linear-gradient(180deg, #@azul-2 0%, #1C8FD9 100%, #1C8FD9 100%);
     min-height: 20px;
 }
 

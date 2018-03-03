@@ -6765,7 +6765,7 @@ body {
 * CSS Lets LP 02
  */
 .braco {
-  color: #fff;
+  color: #ffffff;
 }
 .amarelo {
   color: #FFA500;
@@ -6870,7 +6870,7 @@ fieldset[disabled] a.btn-padrao {
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background-color: #FFA500;
   border-color: #FFA500;
 }
@@ -6911,19 +6911,19 @@ fieldset[disabled] a.btn-amarelo {
 }
 .btn-amarelo:focus,
 .btn-amarelo.focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #cc8400;
   border-color: #805300;
 }
 .btn-amarelo:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #cc8400;
   border-color: #c27d00;
 }
 .btn-amarelo:active,
 .btn-amarelo.active,
 .open > .dropdown-toggle.btn-amarelo {
-  color: #fff;
+  color: #ffffff;
   background-color: #cc8400;
   border-color: #c27d00;
 }
@@ -6936,7 +6936,7 @@ fieldset[disabled] a.btn-amarelo {
 .btn-amarelo:active.focus,
 .btn-amarelo.active.focus,
 .open > .dropdown-toggle.btn-amarelo.focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #a86d00;
   border-color: #805300;
 }
@@ -6959,7 +6959,7 @@ fieldset[disabled] .btn-amarelo.focus {
 }
 .btn-amarelo .badge {
   color: #FFA500;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .btn-cinza {
   display: inline-block;
@@ -7106,7 +7106,7 @@ fieldset[disabled] .btn-cinza.focus {
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background-color: #52B152;
   border-color: #52B152;
 }
@@ -7147,19 +7147,19 @@ fieldset[disabled] a.btn-verde {
 }
 .btn-verde:focus,
 .btn-verde.focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #418f41;
   border-color: #295b29;
 }
 .btn-verde:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #418f41;
   border-color: #3d883d;
 }
 .btn-verde:active,
 .btn-verde.active,
 .open > .dropdown-toggle.btn-verde {
-  color: #fff;
+  color: #ffffff;
   background-color: #418f41;
   border-color: #3d883d;
 }
@@ -7172,7 +7172,7 @@ fieldset[disabled] a.btn-verde {
 .btn-verde:active.focus,
 .btn-verde.active.focus,
 .open > .dropdown-toggle.btn-verde.focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #367736;
   border-color: #295b29;
 }
@@ -7195,7 +7195,7 @@ fieldset[disabled] .btn-verde.focus {
 }
 .btn-verde .badge {
   color: #52B152;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .btn-consultor {
   display: inline-block;
@@ -7222,7 +7222,7 @@ fieldset[disabled] .btn-verde.focus {
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background-color: #FFA500;
   border-color: #FFA500;
   margin-top: 8px;
@@ -7267,19 +7267,19 @@ fieldset[disabled] a.btn-consultor {
 }
 .btn-consultor:focus,
 .btn-consultor.focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #cc8400;
   border-color: #805300;
 }
 .btn-consultor:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #cc8400;
   border-color: #c27d00;
 }
 .btn-consultor:active,
 .btn-consultor.active,
 .open > .dropdown-toggle.btn-consultor {
-  color: #fff;
+  color: #ffffff;
   background-color: #cc8400;
   border-color: #c27d00;
 }
@@ -7292,7 +7292,7 @@ fieldset[disabled] a.btn-consultor {
 .btn-consultor:active.focus,
 .btn-consultor.active.focus,
 .open > .dropdown-toggle.btn-consultor.focus {
-  color: #fff;
+  color: #ffffff;
   background-color: #a86d00;
   border-color: #805300;
 }
@@ -7315,7 +7315,7 @@ fieldset[disabled] .btn-consultor.focus {
 }
 .btn-consultor .badge {
   color: #FFA500;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .btn-consultor.btn-sm {
   margin-top: 10px;
@@ -7371,14 +7371,14 @@ header .logo {
 }
 .navbar-default .navbar-brand {
   font-family: Lest Regular;
-  color: #fff;
+  color: #ffffff;
   height: 29px;
   width: 152px;
   font-size: 24px;
   line-height: 29px;
 }
 .navbar-default li a {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   font-family: Bernina Sans Condense Bold;
   font-size: 16px;
   letter-spacing: 1px;
@@ -7424,7 +7424,7 @@ header .logo {
 #ola-tecnologia h1 {
   padding-top: 95px;
   font-family: Bernina Sans Condense Bold;
-  color: #fff;
+  color: #ffffff;
   font-size: 50px;
   line-height: 56px;
   text-transform: uppercase;
@@ -7432,7 +7432,7 @@ header .logo {
 #ola-tecnologia p {
   padding-top: 12px;
   padding-bottom: 55px;
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   line-height: 30px;
 }
@@ -7453,16 +7453,16 @@ header .logo {
 #venda-mais {
   padding-top: 0px;
   margin-top: 80px;
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: url(../img/ingresso@2x.png);
 }
 #sua-lista {
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: url(../img/lista@2x.png);
 }
 #formidaveis {
   padding-top: 60px;
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: url(../img/ingresso-lista@2x.png);
 }
 #mesma-plataforma {
@@ -7472,7 +7472,7 @@ header .logo {
 }
 #mesma-plataforma p {
   padding-top: 120px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 26px;
   line-height: 42px;
 }
@@ -7597,7 +7597,7 @@ header .logo {
 #conheca-seu-publico h1 {
   padding-top: 109px;
   padding-bottom: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Bernina Sans Condense Bold;
   font-size: 50px;
   line-height: 56px;
@@ -7605,7 +7605,7 @@ header .logo {
   text-align: center;
 }
 #conheca-seu-publico p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Bernina Sans Regular;
   font-size: 16px;
   line-height: 28px;
@@ -7662,7 +7662,7 @@ header .logo {
   padding: 48px;
   border: 1px solid #DCDCDC;
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento img {
@@ -7708,7 +7708,7 @@ header .logo {
 #ainda-com-duvidas {
   height: 873px;
   background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
 #ainda-com-duvidas h1 {
@@ -7718,7 +7718,7 @@ header .logo {
   text-transform: uppercase;
 }
 #ainda-com-duvidas p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Bernina Sans Regular;
   font-size: 16px;
   line-height: 28px;
@@ -7747,7 +7747,7 @@ header .logo {
   line-height: 20px;
 }
 #ainda-com-duvidas .footer ul li a {
-  color: #fff;
+  color: #ffffff;
 }
 #ainda-com-duvidas .footer ul li a img {
   width: 24px;
@@ -7761,7 +7761,7 @@ header .logo {
 }
 .from p,
 .from a {
-  color: #fff;
+  color: #ffffff;
 }
 .from a {
   text-decoration: underline;
@@ -7781,11 +7781,11 @@ header .logo {
 }
 #lets-2-min {
   padding: 50px 0;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
 }
 #myModal {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 #myModal .modal-dialog {
   width: 600px;
