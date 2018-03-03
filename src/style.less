@@ -84,11 +84,11 @@ body{
 }
 
 .btn-padrao{
+    .btn;
     font-family: @berdina-condense;
     font-size: 16px;
     letter-spacing: 1px;	
-    line-height: 22px;
-    .btn;
+    line-height: 22px;    
     padding: 12px 25px;
     border-radius: 25px;
     .text-uppercase;
@@ -117,6 +117,12 @@ body{
     .btn-padrao;
     .button-variant(@branco; @verde; @verde);
 
+}
+
+.btn-consultor{
+    .btn-amarelo;
+    .navbar-btn; 
+    font-size: 16px;
 }
 
 .equal {
@@ -240,7 +246,7 @@ header{
 
     h1{
         padding-top: (151px-56x);
-        font-family: @berdina-bold;
+        font-family: @berdina-condense;
         color: @branco;	        
         font-size: 50px;
         line-height: 56px;
@@ -255,18 +261,22 @@ header{
     }
 
     .role{
-        font-family:  @berdina;
-        .text-uppercase;
-        position: absolute;
-        width: 200px;        
-        bottom: 50px;
-        left: 50%;
-        margin-left: -100px;
-        text-align: center;
-        color: white;
-        font-size: 16px;	
-        letter-spacing: 1px;	
-        line-height: 22px;        
+
+        p{
+            font-family:  @berdina-condense;
+            .text-uppercase;
+            position: absolute;
+            width: 200px;        
+            bottom: 50px;
+            left: 50%;
+            margin-left: -100px;
+            text-align: center;
+            color: white;
+            font-size: 16px;	
+            letter-spacing: 1px;	
+            line-height: 22px; 
+        }
+               
     }
 }
 
@@ -501,11 +511,13 @@ header{
     }
 
     #app-demo{
-        .bkg-img;
+        
         min-height: 600px;
         background-size: auto 550px;
-
         padding-top: 52px;
+
+        width: 100%;
+        height: auto;
     }//#app-demo
 
 }//#menos-fila

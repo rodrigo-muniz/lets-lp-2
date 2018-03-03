@@ -6783,10 +6783,6 @@ body {
   margin-top: 3px;
 }
 .btn-padrao {
-  font-family: Bernina Sans Condense Bold;
-  font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 22px;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -6805,6 +6801,10 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: Bernina Sans Condense Bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
@@ -6845,10 +6845,6 @@ fieldset[disabled] a.btn-padrao {
   pointer-events: none;
 }
 .btn-amarelo {
-  font-family: Bernina Sans Condense Bold;
-  font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 22px;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -6867,6 +6863,10 @@ fieldset[disabled] a.btn-padrao {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: Bernina Sans Condense Bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
@@ -7081,10 +7081,6 @@ fieldset[disabled] .btn-cinza.focus {
   background-color: #6ED3FF;
 }
 .btn-verde {
-  font-family: Bernina Sans Condense Bold;
-  font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 22px;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -7103,6 +7099,10 @@ fieldset[disabled] .btn-cinza.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: Bernina Sans Condense Bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
   padding: 12px 25px;
   border-radius: 25px;
   text-transform: uppercase;
@@ -7196,6 +7196,134 @@ fieldset[disabled] .btn-verde.focus {
 .btn-verde .badge {
   color: #52B152;
   background-color: #fff;
+}
+.btn-consultor {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Bernina Sans Condense Bold;
+  letter-spacing: 1px;
+  line-height: 22px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #FFA500;
+  border-color: #FFA500;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-top: 3px;
+  font-size: 16px;
+}
+.btn-consultor:focus,
+.btn-consultor:active:focus,
+.btn-consultor.active:focus,
+.btn-consultor.focus,
+.btn-consultor:active.focus,
+.btn-consultor.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-consultor:hover,
+.btn-consultor:focus,
+.btn-consultor.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn-consultor:active,
+.btn-consultor.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-consultor.disabled,
+.btn-consultor[disabled],
+fieldset[disabled] .btn-consultor {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-consultor.disabled,
+fieldset[disabled] a.btn-consultor {
+  pointer-events: none;
+}
+.btn-consultor:focus,
+.btn-consultor.focus {
+  color: #fff;
+  background-color: #cc8400;
+  border-color: #805300;
+}
+.btn-consultor:hover {
+  color: #fff;
+  background-color: #cc8400;
+  border-color: #c27d00;
+}
+.btn-consultor:active,
+.btn-consultor.active,
+.open > .dropdown-toggle.btn-consultor {
+  color: #fff;
+  background-color: #cc8400;
+  border-color: #c27d00;
+}
+.btn-consultor:active:hover,
+.btn-consultor.active:hover,
+.open > .dropdown-toggle.btn-consultor:hover,
+.btn-consultor:active:focus,
+.btn-consultor.active:focus,
+.open > .dropdown-toggle.btn-consultor:focus,
+.btn-consultor:active.focus,
+.btn-consultor.active.focus,
+.open > .dropdown-toggle.btn-consultor.focus {
+  color: #fff;
+  background-color: #a86d00;
+  border-color: #805300;
+}
+.btn-consultor:active,
+.btn-consultor.active,
+.open > .dropdown-toggle.btn-consultor {
+  background-image: none;
+}
+.btn-consultor.disabled:hover,
+.btn-consultor[disabled]:hover,
+fieldset[disabled] .btn-consultor:hover,
+.btn-consultor.disabled:focus,
+.btn-consultor[disabled]:focus,
+fieldset[disabled] .btn-consultor:focus,
+.btn-consultor.disabled.focus,
+.btn-consultor[disabled].focus,
+fieldset[disabled] .btn-consultor.focus {
+  background-color: #FFA500;
+  border-color: #FFA500;
+}
+.btn-consultor .badge {
+  color: #FFA500;
+  background-color: #fff;
+}
+.btn-consultor.btn-sm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-consultor.btn-xs {
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 .equal {
   display: flex;
@@ -7295,7 +7423,7 @@ header .logo {
 }
 #ola-tecnologia h1 {
   padding-top: 95px;
-  font-family: Bernina Sans Bold;
+  font-family: Bernina Sans Condense Bold;
   color: #fff;
   font-size: 50px;
   line-height: 56px;
@@ -7308,8 +7436,8 @@ header .logo {
   font-size: 18px;
   line-height: 30px;
 }
-#ola-tecnologia .role {
-  font-family: Bernina Sans Regular;
+#ola-tecnologia .role p {
+  font-family: Bernina Sans Condense Bold;
   text-transform: uppercase;
   position: absolute;
   width: 200px;
@@ -7501,15 +7629,11 @@ header .logo {
   line-height: 28px;
 }
 #menos-fila #app-demo {
-  background: no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: block;
   min-height: 600px;
   background-size: auto 550px;
   padding-top: 52px;
+  width: 100%;
+  height: auto;
 }
 #quem-ja-esta-usando h1 {
   padding-top: 151px;
