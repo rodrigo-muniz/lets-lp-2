@@ -7331,9 +7331,18 @@ fieldset[disabled] .btn-consultor.focus {
   flex-wrap: wrap;
 }
 h1 {
-  font-family: Bernina Sans Regular;
+  font-family: Bernina Sans Condense Bold;
   font-size: 50px;
   line-height: 56px;
+  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  h1 {
+    padding-top: 0px;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+  }
 }
 h2 {
   font-family: Bernina Sans Condense Bold;
@@ -7377,6 +7386,12 @@ header .logo {
   font-size: 24px;
   line-height: 29px;
 }
+.navbar-default .navbar-toggle {
+  border: 0px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
 .navbar-default li a {
   color: #ffffff !important;
   font-family: Bernina Sans Condense Bold;
@@ -7387,9 +7402,8 @@ header .logo {
   padding-left: 34px;
 }
 .animacao {
-  padding-top: 160px;
   width: 100%;
-  height: 550px;
+  min-height: 550px;
   background-position: 30% center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -7399,6 +7413,14 @@ header .logo {
   padding-bottom: 24px;
   text-transform: uppercase;
   padding-top: 129px;
+}
+@media (max-width: 991px) {
+  .animacao h2 {
+    padding-bottom: 0px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 .lista {
   padding-left: 0;
@@ -7412,22 +7434,19 @@ header .logo {
   padding-bottom: 18px;
 }
 #ola-tecnologia {
+  min-height: 760px;
+  height: 100vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   display: block;
-  min-height: 100vh;
   position: relative;
 }
 #ola-tecnologia h1 {
   padding-top: 95px;
-  font-family: Bernina Sans Condense Bold;
   color: #ffffff;
-  font-size: 50px;
-  line-height: 56px;
-  text-transform: uppercase;
 }
 #ola-tecnologia p {
   padding-top: 12px;
@@ -7435,6 +7454,21 @@ header .logo {
   color: #ffffff;
   font-size: 18px;
   line-height: 30px;
+}
+@media (max-width: 991px) {
+  #ola-tecnologia p {
+    padding-top: 9px;
+    padding-bottom: 34px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+#ola-tecnologia button {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 #ola-tecnologia .role p {
   font-family: Bernina Sans Condense Bold;
@@ -7450,47 +7484,84 @@ header .logo {
   letter-spacing: 1px;
   line-height: 22px;
 }
+@media (max-width: 991px) {
+  #ola-tecnologia .role p {
+    bottom: 85px;
+  }
+}
+#mesma-plataforma {
+  background-color: #6ED3FF;
+  text-align: center;
+}
+#mesma-plataforma p {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 42px;
+}
+@media (max-width: 991px) {
+  #mesma-plataforma p {
+    padding-top: 56px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+#mesma-plataforma p span {
+  font-weight: bold;
+}
 #venda-mais {
   padding-top: 0px;
   margin-top: 80px;
   background-color: #ffffff;
   background-image: url(../img/ingresso@2x.png);
 }
+@media (max-width: 991px) {
+  #venda-mais {
+    background-image: none;
+    margin-top: 36px;
+  }
+}
 #sua-lista {
   background-color: #ffffff;
   background-image: url(../img/lista@2x.png);
+}
+@media (max-width: 991px) {
+  #sua-lista {
+    background-image: none;
+  }
 }
 #formidaveis {
   padding-top: 60px;
   background-color: #ffffff;
   background-image: url(../img/ingresso-lista@2x.png);
 }
-#mesma-plataforma {
-  background-color: #6ED3FF;
-  min-height: 324px;
-  text-align: center;
-}
-#mesma-plataforma p {
-  padding-top: 120px;
-  color: #ffffff;
-  font-size: 26px;
-  line-height: 42px;
-}
-#mesma-plataforma p span {
-  font-weight: bold;
+@media (max-width: 991px) {
+  #formidaveis {
+    background-image: none;
+    padding-top: 0px;
+  }
 }
 #melhores-taxas {
   padding-bottom: 165px;
+}
+@media (max-width: 991px) {
+  #melhores-taxas {
+    padding-bottom: 58px;
+  }
 }
 #melhores-taxas h1 {
   padding-top: 261px;
   padding-bottom: 12px;
   color: #3C3C3C;
-  font-family: Bernina Sans Condense Bold;
-  font-size: 50px;
-  line-height: 56px;
-  text-transform: uppercase;
   text-align: center;
+}
+@media (max-width: 991px) {
+  #melhores-taxas h1 {
+    padding-top: 0px;
+    padding-bottom: 8px;
+  }
 }
 #melhores-taxas p.desc {
   color: #3C3C3C;
@@ -7498,6 +7569,13 @@ header .logo {
   line-height: 28px;
   text-align: center;
   padding-bottom: 60px;
+}
+@media (max-width: 991px) {
+  #melhores-taxas p.desc {
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 36px;
+  }
 }
 #melhores-taxas .tabela-lets {
   border: 1px solid #DCDCDC;
@@ -7514,12 +7592,25 @@ header .logo {
   text-align: center;
   border-radius: 8px 8px 0px 0px;
 }
+@media (max-width: 991px) {
+  #melhores-taxas .tabela-lets h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
 #melhores-taxas .tabela-lets p.taxa {
   padding-top: 16px;
   font-family: Vinila Compressed;
   font-size: 50px;
   font-weight: 300;
   line-height: 60px;
+}
+@media (max-width: 991px) {
+  #melhores-taxas .tabela-lets p.taxa {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+  }
 }
 #melhores-taxas .tabela-lets p.taxa span {
   font-size: 25px;
@@ -7534,50 +7625,65 @@ header .logo {
 #melhores-taxas .tabela-pago h2 {
   background-color: #DEEAF3;
 }
+@media (max-width: 991px) {
+  #melhores-taxas .tabela-gratuito {
+    margin-top: 40px;
+  }
+}
 #melhores-taxas .tabela-gratuito h2 {
   background-color: #E4F9DC;
 }
-#melhores-taxas .info .credit-cards {
+#melhores-taxas .credit-cards {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
 }
-#melhores-taxas .info .credit-cards > li {
+#melhores-taxas .credit-cards > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
-#melhores-taxas .info .credit-cards li {
+#melhores-taxas .credit-cards li {
   padding-left: 3px;
   padding-right: 3px;
 }
-#melhores-taxas .info .credit-cards li img {
+#melhores-taxas .credit-cards li img {
   max-width: 34px;
   height: auto;
 }
-#melhores-taxas .info p {
+#melhores-taxas p.info,
+#melhores-taxas p.credit-cards {
   color: #646464;
   font-family: Bernina Sans Regular;
   font-size: 13px;
   line-height: 22px;
 }
+@media (max-width: 991px) {
+  #melhores-taxas p.info,
+  #melhores-taxas p.credit-cards {
+    padding: 0 50px;
+  }
+}
 #sua-audiencia {
+  min-height: 760px;
+  height: 100vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   display: block;
-  min-height: 760px;
 }
 #sua-audiencia h1 {
   padding-top: 84px;
   padding-bottom: 12px;
   color: #3C3C3C;
-  font-family: Bernina Sans Condense Bold;
-  font-size: 50px;
-  line-height: 56px;
-  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  #sua-audiencia h1 {
+    padding-top: 50px;
+    padding-bottom: 8px;
+  }
 }
 #sua-audiencia p {
   color: #3C3C3C;
@@ -7585,24 +7691,34 @@ header .logo {
   font-size: 16px;
   line-height: 28px;
 }
+@media (max-width: 991px) {
+  #sua-audiencia p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
 #conheca-seu-publico {
+  min-height: 760px;
+  height: 100vh;
   background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   display: block;
-  min-height: 900px;
 }
 #conheca-seu-publico h1 {
   padding-top: 109px;
   padding-bottom: 12px;
   color: #ffffff;
-  font-family: Bernina Sans Condense Bold;
-  font-size: 50px;
-  line-height: 56px;
-  text-transform: uppercase;
   text-align: center;
+}
+@media (max-width: 991px) {
+  #conheca-seu-publico h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
 }
 #conheca-seu-publico p {
   color: #ffffff;
@@ -7613,14 +7729,21 @@ header .logo {
 #conheca-seu-publico p span {
   font-weight: bold;
 }
+@media (max-width: 991px) {
+  #conheca-seu-publico p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 #menos-fila h1 {
   padding-top: 142px;
   padding-bottom: 12px;
   color: #3C3C3C;
-  font-family: Bernina Sans Condense Bold;
-  font-size: 50px;
-  line-height: 56px;
-  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  #menos-fila h1 {
+    padding-bottom: 10px;
+  }
 }
 #menos-fila p {
   color: #3C3C3C;
@@ -7635,18 +7758,37 @@ header .logo {
   width: 100%;
   height: auto;
 }
+@media (max-width: 991px) {
+  #menos-fila #app-demo {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    min-height: auto;
+  }
+}
 #quem-ja-esta-usando h1 {
   padding-top: 151px;
   padding-bottom: 60px;
   color: #3C3C3C;
-  font-family: Bernina Sans Condense Bold;
-  font-size: 50px;
-  line-height: 56px;
-  text-transform: uppercase;
   text-align: center;
+}
+@media (max-width: 991px) {
+  #quem-ja-esta-usando h1 {
+    padding-top: 140px;
+    padding-bottom: 29px;
+  }
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators {
   bottom: 80px;
+}
+@media (max-width: 767px) {
+  #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators {
+    display: none !important;
+  }
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-indicators li {
   border: 1px solid #D8D8D8;
@@ -7680,6 +7822,14 @@ header .logo {
   font-size: 18px;
   line-height: 25px;
 }
+@media (max-width: 991px) {
+  #quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento h2 {
+    padding-top: 18px;
+    padding-bottom: 42px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 #quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento h3 {
   padding-bottom: 10px;
   color: #3C3C3C;
@@ -7687,12 +7837,25 @@ header .logo {
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 28px;
+  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  #quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 #quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento p {
   color: #3C3C3C;
   font-family: Bernina Sans Regular;
   font-size: 16px;
   line-height: 28px;
+}
+@media (max-width: 991px) {
+  #quem-ja-esta-usando #carousel-depoimentos .carousel-inner .item .card-depoimento p {
+    font-size: 12px;
+    line-height: 22px;
+  }
 }
 #quem-ja-esta-usando #logo-clientes {
   margin-top: 46px;
@@ -7705,17 +7868,32 @@ header .logo {
   width: 80%;
   height: auto;
 }
+@media (max-width: 991px) {
+  #quem-ja-esta-usando #logo-clientes img {
+    width: 60%;
+    padding-bottom: 50px;
+  }
+}
 #ainda-com-duvidas {
   height: 873px;
   background: linear-gradient(180deg, #3CC2EE 0%, #1C8FD9 100%, #1C8FD9 100%);
   color: #ffffff;
   text-align: center;
 }
+@media (max-width: 991px) {
+  #ainda-com-duvidas {
+    height: auto;
+  }
+}
 #ainda-com-duvidas h1 {
   padding-top: 140px;
   padding-bottom: 12px;
-  font-family: Bernina Sans Condense Bold;
-  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  #ainda-com-duvidas h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
 }
 #ainda-com-duvidas p {
   color: #ffffff;
@@ -7729,6 +7907,12 @@ header .logo {
   padding-top: 60px;
   text-align: left;
 }
+@media (max-width: 991px) {
+  #ainda-com-duvidas .footer {
+    margin-top: 0;
+    padding-top: 73px;
+  }
+}
 #ainda-com-duvidas .footer h2 {
   padding-bottom: 18px;
   font-family: Bernina Sans Bold;
@@ -7736,9 +7920,25 @@ header .logo {
   font-weight: bold;
   line-height: 20px;
 }
+#ainda-com-duvidas .footer ul.social {
+  margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  #ainda-com-duvidas .footer ul.social {
+    text-align: center;
+    margin-bottom: 41px;
+  }
+}
 #ainda-com-duvidas .footer ul.social li {
   padding-left: 5px;
   padding-right: 15px;
+}
+@media (max-width: 991px) {
+  #ainda-com-duvidas .footer ul.social li {
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0 5px;
+  }
 }
 #ainda-com-duvidas .footer ul li {
   padding-bottom: 18px;
@@ -7753,15 +7953,37 @@ header .logo {
   width: 24px;
   height: auto;
 }
+@media (max-width: 991px) {
+  #ainda-com-duvidas .footer .ultima-lista {
+    margin-bottom: 270px;
+  }
+}
 .from {
   height: 107px;
   margin-top: -107px;
   padding: 33px 123px;
   border-top: 1px solid rgba(255, 255, 255, 0.8);
 }
+@media (max-width: 991px) {
+  .from {
+    height: 127px;
+    margin-top: -270px;
+    padding: 0;
+    text-align: center;
+  }
+}
 .from p,
 .from a {
   color: #ffffff;
+  float: right !important;
+}
+@media (max-width: 991px) {
+  .from p,
+  .from a {
+    font-size: 12px;
+    line-height: 17px;
+    float: none !important;
+  }
 }
 .from a {
   text-decoration: underline;
@@ -7775,9 +7997,24 @@ header .logo {
   padding-left: 0px;
   padding-right: 25px;
 }
+@media (max-width: 991px) {
+  .from ul li {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 .from ul li img {
   width: 140px;
   height: auto;
+}
+@media (max-width: 991px) {
+  .from ul li img {
+    width: 130px;
+    padding-top: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 #lets-2-min {
   padding: 50px 0;

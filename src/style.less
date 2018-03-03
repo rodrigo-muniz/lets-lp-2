@@ -81,7 +81,6 @@ body{
 
 .navbar-btn {
     margin-top: 3px;
-    //margin-bottom: 8px;
 }
 
 .btn-padrao{
@@ -133,9 +132,17 @@ body{
 }
 
 h1{
-    font-family: @berdina;
+    font-family: @berdina-condense;
     font-size: 50px;
     line-height: 56px;
+    .text-uppercase;
+
+    @media (max-width: @screen-sm-max){
+        padding-top: 0px;
+        font-size: 30px;	
+        line-height: 38px;
+        .text-center;
+    }
 }
 
 h2{
@@ -190,6 +197,15 @@ header{
         line-height: 29px;
     }
 
+    .navbar-toggle{
+        border:0px;
+
+        .icon-bar{
+            background-color: @branco;
+        }
+
+    }
+
     li{
         a{
             color: @branco !important;	
@@ -208,22 +224,31 @@ header{
 
 .animacao{
 
-        padding-top: 160px;
-        
+        //padding-top: 160px;        
         width: 100%; 
-        height: 550px; 
+        min-height: 550px; 
         background-position: 30% center; 
         background-attachment: scroll; 
         background-repeat: no-repeat;
         background-size: 550px 550px;
 
+
         h2{
             padding-bottom: 24px;
             .text-uppercase;
-            padding-top: 129px;
-
+            padding-top: 129px;   
             
+            
+            @media (max-width: @screen-sm-max){
+                padding-bottom: 0px;
+                .text-center;
+                padding-top: 25px;         
+                padding-bottom: 25px;         
+            }
         }
+
+
+        
 }
 
 
@@ -242,16 +267,12 @@ header{
 
 #ola-tecnologia{
     .bkg-img;
-    min-height: 100vh;
     position: relative;
 
     h1{
         padding-top: (151px-56x);
-        font-family: @berdina-condense;
         color: @branco;	        
-        font-size: 50px;
-        line-height: 56px;
-        .text-uppercase;
+
     }
     p{
         padding-top: 12px;
@@ -259,6 +280,18 @@ header{
         color: @branco;	
         font-size: 18px;
         line-height: 30px;
+        @media (max-width: @screen-sm-max){
+            padding-top: 9px;
+            padding-bottom: 34px;
+            font-size: 14px;	
+            line-height: 24px;	
+            text-align: center;
+        }
+    }
+
+    button{
+        .text-center;
+    .center-block;
     }
 
     .role{
@@ -276,8 +309,37 @@ header{
             font-size: 16px;	
             letter-spacing: 1px;	
             line-height: 22px; 
+
+            @media (max-width: @screen-sm-max){
+                bottom: 85px; 
+            }
         }
                
+    }
+}
+
+
+#mesma-plataforma{
+    background-color: @azul;    
+    .text-center;
+
+    p{
+        padding-top: 120px;
+        padding-bottom: 120px;
+        color: @branco;		
+        font-size: 26px;	
+        line-height: 42px;
+
+        @media (max-width: @screen-sm-max){
+            padding-top: 56px;
+            padding-bottom: 60px;
+            font-size: 18px;	
+            line-height: 30px;	            
+        }
+
+        span{
+            font-weight: bold;
+        }
     }
 }
 
@@ -287,16 +349,21 @@ header{
     //.animacao;
     background-color:@branco; 
     background-image: url(../img/ingresso@2x.png); 
+    @media (max-width: @screen-sm-max){
+        background-image: none;
+        margin-top: 36px;
 
-
-
-
+       
+    }
 }
 
 #sua-lista{
     //.animacao;
     background-color:@branco; 
     background-image: url(../img/lista@2x.png); 
+    @media (max-width: @screen-sm-max){
+        background-image: none;
+    }
 }
 
 #formidaveis{
@@ -304,37 +371,30 @@ header{
     //.animacao;
     background-color:@branco; 
     background-image: url(../img/ingresso-lista@2x.png); 
+    @media (max-width: @screen-sm-max){
+        background-image: none;
+        padding-top: 0px;
+    }
 }
 
 
 .bkg-img(){
+
+    min-height: 760px;
+    height: 100vh;
+
     background: no-repeat center center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     display: block;
     
 }
 
 
 
-#mesma-plataforma{
-    background-color: @azul;
-    min-height: 324px;
-    .text-center;
-    p{
-        padding-top: 120px;
-        color: @branco;		
-        font-size: 26px;	
-        line-height: 42px;
 
-        span{
-            font-weight: bold;
-        }
-    }
-}
 
 
 
@@ -342,15 +402,20 @@ header{
 
     padding-bottom: 165px;
 
+    @media (max-width: @screen-sm-max){
+        padding-bottom: 58px;
+    }
+
     h1{
         padding-top: 261px;
         padding-bottom: 12px;
         color: #3C3C3C;	
-        font-family: @berdina-condense;	
-        font-size: 50px;	
-        line-height: 56px;
-        .text-uppercase;
         .text-center;
+
+        @media (max-width: @screen-sm-max){
+            padding-top: 0px;
+            padding-bottom: 8px;
+        }
     }
 
     p.desc{
@@ -359,6 +424,12 @@ header{
         line-height: 28px;        
         .text-center;
         padding-bottom: 60px;
+
+        @media (max-width: @screen-sm-max){
+            font-size: 14px;	
+            line-height: 24px;	
+            padding-bottom: 36px;
+        }
 
     }
 
@@ -376,6 +447,11 @@ header{
             .text-uppercase;
             .text-center;
             border-radius: 8px 8px 0px 0px;
+
+            @media (max-width: @screen-sm-max){
+                font-size: 18px;	
+                line-height: 25px;	
+            }
         }
 
         p.taxa{
@@ -384,6 +460,12 @@ header{
             font-size: 50px;	
             font-weight: 300;	
             line-height: 60px;
+
+            @media (max-width: @screen-sm-max){
+                font-size: 50px;	
+                font-weight: 300;	
+                line-height: 60px;
+            }
 
             span{
                 font-size: 25px;
@@ -406,12 +488,17 @@ header{
         }
     }
     .tabela-gratuito{
+
+        @media (max-width: @screen-sm-max){
+            margin-top: 40px;
+        }
+
         h2{
             background-color: #E4F9DC;
         }
     }
 
-    .info{
+    
 
         .credit-cards{
             .list-inline;
@@ -427,14 +514,19 @@ header{
             
         }
 
-        p{
+
+        p.info, p.credit-cards{
             color: #646464;	
             font-family: @berdina;	
             font-size: 13px;	
             line-height: 22px;
+
+            @media (max-width: @screen-sm-max){
+                padding: 0 50px;
+            }
         }
 
-    }
+
 
 
    
@@ -442,16 +534,17 @@ header{
 
 #sua-audiencia{
     .bkg-img;
-    min-height: 760px;
+    
 
     h1{
         padding-top: 84px;
         padding-bottom: 12px;
         color: #3C3C3C;	
-        font-family: @berdina-condense;	
-        font-size: 50px;	
-        line-height: 56px;
-        .text-uppercase;
+
+        @media (max-width: @screen-sm-max){
+            padding-top: 50px;
+            padding-bottom: 8px;
+        }
     }
 
     p{
@@ -459,22 +552,29 @@ header{
         font-family: @berdina;	
         font-size: 16px;	
         line-height: 28px;
+
+        @media (max-width: @screen-sm-max){
+            font-size: 14px;	
+            line-height: 24px;
+            .text-center;
+        }
     }
 }
 
 #conheca-seu-publico{
     .bkg-img;
-    min-height: 900px;
+
 
     h1{
         padding-top: 109px;
         padding-bottom: 12px;
         color: @branco;	
-        font-family: @berdina-condense;	
-        font-size: 50px;	
-        line-height: 56px;
-        .text-uppercase;
         .text-center;
+
+        @media (max-width: @screen-sm-max){
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
     }
 
     p{
@@ -485,6 +585,11 @@ header{
         span{
             font-weight: bold;
         }
+
+        @media (max-width: @screen-sm-max){
+            font-size: 14px;	
+            line-height: 24px;	
+        }
     }
 }
 
@@ -493,13 +598,13 @@ header{
     h1{
         padding-top: 142px;
         padding-bottom: 12px;
-
         color: #3C3C3C;	
-        font-family: @berdina-condense;	
-        font-size: 50px;	
-        line-height: 56px;
 
-        .text-uppercase;
+        @media (max-width: @screen-sm-max){
+            //padding-top: 50px;
+            padding-bottom: 10px;
+        }
+
 
     }
 
@@ -516,9 +621,17 @@ header{
         min-height: 600px;
         background-size: auto 550px;
         padding-top: 52px;
-
         width: 100%;
         height: auto;
+
+
+        @media (max-width: @screen-sm-max){
+            padding-top: 40px;            
+            padding-bottom: 10px;
+            min-height: auto;
+
+        }
+
     }//#app-demo
 
 }//#menos-fila
@@ -529,18 +642,23 @@ header{
         padding-top: 151px;
         padding-bottom: 60px;
         color: #3C3C3C;	
-        font-family: @berdina-condense;	
-        font-size: 50px;	
-        line-height: 56px;
-        .text-uppercase;
         .text-center;
+
+        @media (max-width: @screen-sm-max){
+            padding-top: 140px;
+            padding-bottom: 29px;
+
+        }
+
     }
 
     
-
     #carousel-depoimentos{
 
         .carousel-indicators{
+
+            .hidden-xs;
+            .hidden-sm;
 
             bottom: 80px;
 
@@ -587,6 +705,15 @@ header{
                         font-family: @berdina-condense;	
                         font-size: 18px;	
                         line-height: 25px;
+
+                        @media (max-width: @screen-sm-max){
+                            padding-top: 18px;
+                            padding-bottom: 42px;
+                            font-size: 16px;	
+                            line-height: 22px;                
+                        }
+
+
                     }
 
                     h3{
@@ -597,6 +724,14 @@ header{
                         font-size: 20px;	
                         letter-spacing: 1px;	
                         line-height: 28px;
+                        .text-uppercase;
+
+                        @media (max-width: @screen-sm-max){
+                            font-size: 20px;	
+                            line-height: 28px;
+                
+                        }
+
                     }
 
                     p{
@@ -605,6 +740,12 @@ header{
                         font-family: @berdina;	
                         font-size: 16px;	
                         line-height: 28px;
+
+                        @media (max-width: @screen-sm-max){
+                            font-size: 12px;	
+                            line-height: 22px;
+                
+                        }
                     }
                 }
             }
@@ -618,7 +759,13 @@ header{
         img{
             .center-block;
             width: 80%;
-            height: auto;;
+            height: auto;
+
+            @media (max-width: @screen-sm-max){
+                width: 60%;
+                padding-bottom: 50px;
+    
+            }
         }
 
 
@@ -628,15 +775,25 @@ header{
 
 #ainda-com-duvidas{
     height: 873px;
-    background: linear-gradient(180deg, #@azul-2 0%, #1C8FD9 100%, #1C8FD9 100%);
+    background: linear-gradient(180deg, @azul-2 0%, #1C8FD9 100%, #1C8FD9 100%);
     color: @branco;
     .text-center;
+
+    @media (max-width: @screen-sm-max){
+        height: auto;
+
+    }
 
     h1{
         padding-top: 140px;
         padding-bottom: 12px;
-        font-family: @berdina-condense;
-        .text-uppercase;
+
+        @media (max-width: @screen-sm-max){
+            padding-top: 50px;
+            padding-bottom: 10px;
+    
+        }
+
     }
 
     p{
@@ -651,6 +808,12 @@ header{
         margin-top: 105px;
         padding-top: 60px; 
 
+        @media (max-width: @screen-sm-max){
+            margin-top: 0;
+            padding-top: 73px; 
+    
+        }
+
         .text-left;
 
         h2{
@@ -664,9 +827,28 @@ header{
         ul{
 
             &.social{
+
+                
+                @media (max-width: @screen-sm-max){
+                    .text-center;
+                    margin-bottom: 41px;
+            
+                }
+                margin-bottom: 15px;
+
+                
                 li{
                     padding-left: 5px;
                     padding-right: 15px;
+
+
+                    @media (max-width: @screen-sm-max){
+                        padding-left: 0;
+                        padding-right: 0;
+                        padding: 0 5px;
+                
+                    }
+
                 }
 
             }
@@ -690,6 +872,13 @@ header{
             }
         }
 
+        .ultima-lista{
+            
+            @media (max-width: @screen-sm-max){
+                margin-bottom: 270px;        
+            }
+        }
+
         
 
     }
@@ -704,8 +893,30 @@ header{
     padding: 33px 123px;
     border-top: 1px solid rgba(255,255,255,0.8);
 
+    
+
+    @media (max-width: @screen-sm-max){
+        height: 127px;
+        margin-top: -270px;
+        padding: 0;
+
+        .text-center;
+
+    }
+
     p, a{
         color: @branco;
+
+        .pull-right;
+
+        @media (max-width: @screen-sm-max){
+            font-size: 12px;	
+            line-height: 17px;
+
+            float: none !important;
+    
+        }
+
     }
 
     a{
@@ -725,9 +936,26 @@ header{
             padding-left: 0px;
             padding-right: 25px;
 
+            @media (max-width: @screen-sm-max){
+
+                padding-left: 0px;
+                padding-right: 0px;
+                
+            }
+
             img{
                 width: 140px;
                 height: auto;
+
+
+                @media (max-width: @screen-sm-max){
+
+                    width: 130px;
+                    padding-top: 24px;
+                    .center-block;
+                    
+                }
+
             }
         }
     }
@@ -780,7 +1008,7 @@ header{
 }
 
 .acabamento{
-    background: linear-gradient(180deg, #@azul-2 0%, #1C8FD9 100%, #1C8FD9 100%);
+    background: linear-gradient(180deg, @azul-2 0%, #1C8FD9 100%, #1C8FD9 100%);
     min-height: 20px;
 }
 
