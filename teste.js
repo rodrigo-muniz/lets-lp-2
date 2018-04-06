@@ -1,0 +1,1 @@
+ver teste = 0;
